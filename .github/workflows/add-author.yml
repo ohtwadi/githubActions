@@ -1,0 +1,8 @@
+name: add-@author
+run-name: adding ${{ github.actor }} as author
+on: [pull_request]
+jobs:
+  add-author:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ github.event.requested_team }}
