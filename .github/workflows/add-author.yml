@@ -1,6 +1,6 @@
 name: add-@author
 run-name: adding ${{ github.actor }} as author
-on: [pull_request]
+on: [push]
 jobs:
   add-author:
     runs-on: ubuntu-latest
